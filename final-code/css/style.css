@@ -1,0 +1,154 @@
+@import 'https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap';
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-size: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+div.card {
+  width: min(35rem, 87vw);
+  height: 37.4rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 12px -6px red;
+}
+div.card--top, div.card--bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+div.card--top {
+  background-image: url(../img/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 9.2rem;
+}
+div.card--top img {
+  border-radius: 50%;
+  margin-bottom: -5.8rem;
+  border: solid 5px white;
+}
+div.card--bottom {
+  background-color: #FFFFFF;
+  padding-top: 6.7rem;
+  padding-bottom: 5.8rem;
+}
+div.card ul.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  border-top: 1px solid #E8E9EC;
+  margin-top: 2.5rem;
+  padding: 0;
+}
+div.card ul.stats li.stat {
+  text-align: center;
+  margin-top: 1.9rem;
+}
+div.card ul.stats li.stat span {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.15rem;
+  color: #6B7082;
+  display: block;
+}
+div.card span.age {
+  font-weight: 400;
+  color: #6B7082;
+}
+div.card h2.location {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #6B7082;
+  margin-top: 0.7rem;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  background-color: #19A1AE;
+  background-image: url(../img/bg-pattern-top.svg), url(../img/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top -150px left -200px, bottom -150px right -200px;
+  background-size: contain, contain;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

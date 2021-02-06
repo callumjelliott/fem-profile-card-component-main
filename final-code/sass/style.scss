@@ -1,0 +1,23 @@
+@use 'base/reset';
+
+@use 'components/card';
+
+@import 'https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap';
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 900;
+
+    background-color: #19A1AE;
+    background-image: url(../img/bg-pattern-top.svg),url(../img/bg-pattern-bottom.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position: top -150px left -200px, bottom -150px right -200px;
+    background-size: contain,contain;
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
