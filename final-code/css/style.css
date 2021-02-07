@@ -80,7 +80,7 @@ div.card {
   height: 37.4rem;
   border-radius: 1.5rem;
   overflow: hidden;
-  box-shadow: 0 0 12px -6px red;
+  box-shadow: 0 60px 60px -6px rgba(10, 10, 10, 0.3);
 }
 div.card--top, div.card--bottom {
   display: flex;
